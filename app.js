@@ -33,12 +33,17 @@ const checkBalance = () => {
 
 const removeMoney = (amount) => {
   if (balance - amount < 0) {
-    alert("You are withdrawing more than you have left");
+    alert("Insufficient funds to perform");
   } else {
     balance -= amount;
     console.log(balance);
     displayMessage("Your new balance is $" + balance);
   }
+};
+
+const addMoney = (amount) => {
+  balance += amount;
+  displayMessage("Your new balance is $" + balance);
 };
 
 const changeValue = (value) => {
@@ -47,9 +52,12 @@ const changeValue = (value) => {
 
   if (deposit === "true") {
     console.log("depoisting cash");
+    addMoney(value);
   } else {
     console.log("removing cash");
+    removeMoney(value);
   }
+  closeButtons();
 };
 
 const removeHundred = () => {
