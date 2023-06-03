@@ -12,7 +12,7 @@
   <body>
     <div class="main">
       <div class="leftButtons">
-        <button class="btn">Make deposit</button>
+        <button class="btn" onclick="showButtons('true')">Make deposit</button>
         <button class="btn" onclick="checkBalance()">Check balance</button>
         <button class="btn" onclick="addHundred()">Quick add $100</button>
       </div>
@@ -30,7 +30,9 @@
         </div>
       </div>
       <div class="rightButtons">
-        <button class="btn">Make withdrawal</button>
+        <button class="btn" onclick="showButtons('false')">
+          Make withdrawal
+        </button>
         <button class="btn" onclick="removeHundred()">Quick remove $100</button>
       </div>
     </div>
