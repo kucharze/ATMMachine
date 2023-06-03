@@ -4,12 +4,14 @@
   width: 20%;
   flex-direction: column;
   text-align: center;
+  background-color: lightgray;
 }
 
 .rightButtons {
   border: solid black;
   /* height: 200px; */
   width: 20%;
+  background-color: lightgray;
 }
 
 .screen {
@@ -39,14 +41,15 @@
   display: none;
   margin-top: 30px;
   padding: 20px;
-  border: solid green;
+  border: solid black;
 }
 
 .valueButtons2 {
   display: none;
   margin-bottom: 30px;
   padding: 20px;
-  border: solid green;
+  /* height: 70px; */
+  border: solid black;
 }
 
 .row1 {
