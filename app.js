@@ -1,14 +1,24 @@
 let balance = 1000;
 
-//change amount to be adjusted for input withdrawel
-let changeAmount = 10;
-
-let ogChange = 10;
+//if true we are deposting, if not we are withdrawing
+let deposit = true;
 
 let display = document.querySelector(".display");
 
 const addAmount = () => {};
 
+const showButtons = (status) => {
+  console.log("Showing buttons");
+  deposit = status;
+  console.log(deposit);
+  document.querySelector(".valueButtons1").style = "display:block";
+  document.querySelector(".valueButtons2").style = "display:block";
+};
+
+const closeButtons = () => {
+  document.querySelector(".valueButtons1").style = "display:none";
+  document.querySelector(".valueButtons2").style = "display:none";
+};
 const displayMessage = (message) => {
   display.innerHTML = message;
 };
@@ -31,7 +41,16 @@ const removeMoney = (amount) => {
   }
 };
 
-const changeValue = () => {};
+const changeValue = (value) => {
+  //Use a boolean value to determine if we add or withdraw money
+  console.log(parseInt(value));
+
+  if (deposit === "true") {
+    console.log("depoisting cash");
+  } else {
+    console.log("removing cash");
+  }
+};
 
 const removeHundred = () => {
   if (balance - 100 < 0) {
@@ -43,7 +62,7 @@ const removeHundred = () => {
   }
 };
 
-const addHunderd = () => {
+const addHundred = () => {
   balance += 100;
   displayMessage("Your new balance is $" + balance);
 };
