@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ATM machine</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="leftButtons">
+        <button class="btn">Make deposit</button>
+        <button class="btn" onclick="checkBalance()">Check balance</button>
+        <button class="btn" onclick="addHundred()">Quick add $100</button>
+      </div>
+      <div class="screen">
+        <div class="display">This is the main screen</div>
+        <div class="valueButtons1">
+          <button class="row1">100</button>
+          <button class="row1">200</button>
+          <button class="row1">500</button>
+        </div>
+        <div class="valueButtons2">
+          <button class="row2">100</button>
+          <button class="row2">200</button>
+          <button class="row2">500</button>
+        </div>
+      </div>
+      <div class="rightButtons">
+        <button class="btn">Make withdrawal</button>
+        <button class="btn" onclick="removeHundred()">Quick remove $100</button>
+      </div>
+    </div>
+
+    <script src="app.js" async defer></script>
+  </body>
+</html>
