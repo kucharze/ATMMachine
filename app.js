@@ -8,9 +8,7 @@ let display = document.querySelector(".display");
 const addAmount = () => {};
 
 const showButtons = (status) => {
-  console.log("Showing buttons");
   deposit = status;
-  console.log(deposit);
   document.querySelector(".valueButtons1").style = "display:block";
   document.querySelector(".valueButtons2").style = "display:block";
 };
@@ -51,10 +49,8 @@ const changeValue = (value) => {
   console.log(parseInt(value));
 
   if (deposit === "true") {
-    console.log("depoisting cash");
     addMoney(value);
   } else {
-    console.log("removing cash");
     removeMoney(value);
   }
   closeButtons();
