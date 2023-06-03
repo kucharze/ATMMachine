@@ -36,12 +36,14 @@
 }
 
 .valueButtons1 {
+  display: none;
   margin-top: 30px;
   padding: 20px;
   border: solid green;
 }
 
 .valueButtons2 {
+  display: none;
   margin-bottom: 30px;
   padding: 20px;
   border: solid green;
