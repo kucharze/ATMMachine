@@ -34,7 +34,7 @@ const removeMoney = (amount) => {
     alert("Insufficient funds to perform");
   } else {
     balance -= amount;
-    console.log(balance);
+    // console.log(balance);
     displayMessage("Your new balance is $" + balance);
   }
 };
@@ -46,7 +46,7 @@ const addMoney = (amount) => {
 
 const changeValue = (value) => {
   //Use a boolean value to determine if we add or withdraw money
-  console.log(parseInt(value));
+  // console.log(parseInt(value));
 
   if (deposit) {
     addMoney(value);
@@ -61,7 +61,7 @@ const removeHundred = () => {
     alert("You are withdrawing more than you have left");
   } else {
     balance -= 100;
-    console.log(balance);
+    // console.log(balance);
     displayMessage("Your new balance is $" + balance);
   }
 };
