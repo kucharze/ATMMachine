@@ -48,7 +48,7 @@ const changeValue = (value) => {
   //Use a boolean value to determine if we add or withdraw money
   console.log(parseInt(value));
 
-  if (deposit === "true") {
+  if (deposit) {
     addMoney(value);
   } else {
     removeMoney(value);
