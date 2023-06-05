@@ -58,7 +58,7 @@ const changeValue = (value) => {
 
 const removeHundred = () => {
   if (balance - 100 < 0) {
-    alert("You are withdrawing more than you have left");
+    alert("Insufficient funds to perform");
   } else {
     balance -= 100;
     // console.log(balance);
